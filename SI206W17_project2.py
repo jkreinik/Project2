@@ -147,7 +147,11 @@ five_tweets = get_five_tweets("University of Michigan")
 
 ## PART 3 (c) - Iterate over the five_tweets list, invoke the find_urls function that you defined in Part 1 on each element of the list, and accumulate a new list of each of the total URLs in all five of those tweets in a variable called tweet_urls_found. 
 
-
+tweet_urls_found = []
+for x in five_tweets: 
+	real_urls = find_urls(x)
+	for y in real_urls: 
+		tweet_urls_found.append(y)
 
 
 
